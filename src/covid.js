@@ -8,7 +8,7 @@ req({url:url, json:true},(error,response)=>{
 
     const Months=["January","February","March","April","May","June","July","August","September","October","November","December"];
     const d=new Date();
-    d.setDate(d.getDate() - 1)
+    d.setDate(d.getDate()-1);
     const date=d.getDate();
     const month=d.getMonth();
     const year=d.getFullYear();
