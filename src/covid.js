@@ -17,13 +17,11 @@ req({url:url, json:true},(error,response)=>{
     var datebydate=[];
     const fullDate=date + " " + Months[month] + " ";
     // console.log(fullDate);
-    for(var i=0;i<response.body.cases_time_series.length;i++)
-       if(response.body.cases_time_series[i].date == fullDate){
-           confirmed=response.body.cases_time_series[i].totalconfirmed;
-           deceased=response.body.cases_time_series[i].totaldeceased;
-           recovered=response.body.cases_time_series[i].totalrecovered;
+           confirmed=response.body.cases_time_series[response.body.cases_time_series.length-1].totalconfirmed;
+           deceased=response.body.cases_time_series[response.body.cases_time_series.length-1].totaldeceased;
+           recovered=response.body.cases_time_series[response.body.cases_time_series.length-1].totalrecovered;
            active=(confirmed-deceased-recovered).toString();
-       }
+
        states.push({
         confirmed:confirmed,
         deceased:deceased,
@@ -47,7 +45,7 @@ req({url:url, json:true},(error,response)=>{
           confirmed:response.body.cases_time_series[a].totalconfirmed,
           deceased:response.body.cases_time_series[a].totaldeceased,
           recovered:response.body.cases_time_series[a].totalrecovered,
-          active:(confirmed-deceased-recovered).toString(),
+          active:(response.body.cases_time_series[a].totalconfirmed-response.body.cases_time_series[a].totaldeceased-response.body.cases_time_series[a].totalrecovered).toString(),
           date:response.body.cases_time_series[a].date
         })
         j++;
