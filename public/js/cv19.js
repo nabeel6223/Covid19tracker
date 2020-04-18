@@ -30,7 +30,7 @@ var select=document.querySelector("select");
 const dt=document.querySelector(".dt")
 const res=document.querySelector(".res")
 
-fetch("http://localhost:3000/stats").then((response)=>{
+fetch("/stats").then((response)=>{
     response.json().then((data)=>{
                      res.innerHTML=data.statewise[0].statename
                     dt.innerHTML="Confirmed: " + data.statewise[0].confirmed+
@@ -48,7 +48,7 @@ d.setDate(d.getDate() - 14);
 setTimeout(function() { myChart.update(); },1000);
 setTimeout(function() { myChart1.update(); },1000);
 var Months=["January","February","March","April","May","June","July","August","September","October","November","December"];
-fetch("http://localhost:3000/stats").then((response)=>{
+fetch("/stats").then((response)=>{
   response.json().then((data)=>{
     const xtr=data.date_by_date[data.date_by_date.length-1].confirmed-data.date_by_date[data.date_by_date.length-2].confirmed  
     counter("count1", 0, data.total.confirmed, 10);
@@ -129,7 +129,7 @@ var myChart1 = new Chart(ctx1, {
 setTimeout(function() { myChart.update(); },1000);
 setTimeout(function() { myChart1.update(); },1000);
 select.addEventListener("change",()=>{
-    fetch("http://localhost:3000/stats").then((response)=>{
+    fetch("/stats").then((response)=>{
     response.json().then((data)=>{
         for(var i=0;i<=data.statewise.length-1;i++){
             if(select.options[select.selectedIndex].text==(data.statewise[i].statename)){
