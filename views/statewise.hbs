@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cutive&family=Abril+Fatface&family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/nav.css">
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <title>Covid 19 Tracker| Stats Graphs</title>
+    <link rel="icon" href="/images/logo.png" type="image/x-icon">
+
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  
+  {{!-- <script src="https://code.highcharts.com/highcharts.src.js"></script> --}}
+   <style>
+  
+h1 {
+  font-weight: 300;
+  line-height:1em;
+  text-align: center;
+  color: #4DC3FA;
+}
+
+h2 {
+  font-size:1em; 
+  font-weight: 300;
+  text-align: center;
+  display: block;
+  line-height:1em;
+  padding-bottom: 2em;
+  color: #FB667A;
+}
+
+h2 a {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FB667A;
+  text-decoration: none;
+}
+
+.blue { color: #185875; }
+.yellow { color: #FFF842; }
+
+.container th h1 {
+	  font-weight: bold;
+	  font-size: 1em;
+  text-align: left;
+  color: #185875;
+}
+
+.container td {
+
+	  font-weight: normal;
+	  font-size: 14px;
+  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+	   -moz-box-shadow: 0 2px 2px -2px #0E1119;
+	        box-shadow: 0 2px 2px -2px #0E1119;
+}
+.table1{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    overflow-x:auto;
+    overflow-y:auto;
+    height: 1000px;
+        margin-left: 10%;
+    margin-right: 10%;
+}
+.container {
+    width: 100%;
+	  text-align: left;
+	  overflow: hidden;
+	  width: 80%;
+	  margin: 0 auto;
+  display: table;
+  padding: 0 0 8em 0;
+}
+
+.container td, .container th {
+	  padding:20px
+}
+
+
+.container td:first-child { color: #FB667A; 
+  min-width: 150px;}
+
+
+
+
+
+    </style>
+<div id="head-placeholder">
+
+</div>
+
+        <div class="table1">
+<table class="container">
+	<thead>
+		<tr>
+			<th><h1>States</h1></th>
+			<th><h1>Confirmed</h1></th>
+			<th><h1>Active</h1></th>
+			<th><h1>Recovered</h1></th>
+      <th><h1>Deceased</h1></th>
+      <th><h1>Tests</h1></th>
+      <th><h1>Vaccine Doses</h1></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>
+    <tr class="stateData" ></tr>        
+	</tbody>
+</div>
+
+        <script>
+$(function(){
+  $("#head-placeholder").load("p");
+});
+var table=$(".stateData");
+count=0;
+fetch('/state_tests_data').then((response)=>{
+  response.json().then((data)=>{
+
+    for(var i=1;i<data.state_tests_data.length;i++)
+    {
+      table[count++].innerHTML="<td>"+ data.state_tests_data[i].statename +"</td>" + "<td>"+ addCommas(data.state_tests_data[i].confirmed) +"</td>" + "<td>"+ addCommas(data.state_tests_data[i].active) +"</td>" + "<td>"+ addCommas(data.state_tests_data[i].recovered) +"</td>" + "<td>"+ addCommas(data.state_tests_data[i].deceased) +"</td>" +"<td>"+ addCommas(data.state_tests_data[i].total_samples_tested) +"</td>"+ "<td>"+ addCommas(data.state_tests_data[i].total_vaccines_administered) +"</td>" 
+    }
+  })
+})
+
+
+ function addCommas(num) {
+
+    var nfObject = new Intl.NumberFormat('en-IN');
+    var output = nfObject.format(num);
+  
+    return output
+
+  }
+        </script>
+        {{!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script> --}}
+    {{!-- <script src="/js/cv19-2.js"></script> --}}
+    <script src="/js/nav.js"></script>
+</body>
+</html>

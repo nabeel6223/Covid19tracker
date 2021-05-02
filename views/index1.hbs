@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"> 
+   {{!-- <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Potta+One&family=Bebas+Neue&family=Paytone+One&family=Monoton&family=Black+Ops+One&family=Montaga&family=Montserrat:wght@600&display=swap" rel="stylesheet"> --}}
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Proza+Libre&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/ChartUp.css">
+   
+    <title></title>
+</head>
+<body>
+    <style>
+        body{
+            width: 100%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+        }
+       .container{
+           width: 100%;
+           height: 100%;
+       }
+       img{
+        display: block;
+         margin:auto;
+         margin-top: 2%;
+         width: 22%;
+       }
+       .main{
+           text-align: center;
+           font-family: 'Proza Libre', sans-serif;
+       }
+       .row{
+           height: 100%;
+       }
+       .state{
+          text-align: center;
+           font-size: 20px;
+       }
+       .date{
+           font-size: 30px;
+           text-align:center;
+       }
+       .scnd{
+           width: 20%;
+           height: 100px;
+           border: 1px solid black;
+           margin: 2%;
+           text-align: center;
+       }
+       .data{
+           text-align: centre;
+           font-family: 'Comic Neue', cursive;
+           padding-top: 10%;
+           font-size: 35px;
+       }
+       .ch{
+           width: 60%;
+          margin-left: 20%;
+          margin-right: 20%;
+          height: 55%;
+          margin-top: 30px;
+          margin-bottom: 1%;
+
+       }
+       .form-control
+       {   
+           width: 30%;
+           margin: auto;
+       }
+       .rs{
+           width: 30%;
+           height: 200px;
+           display: block;
+           margin:auto;
+           margin-top:30px;
+       }
+       .res{
+           display: block;
+           margin:auto;
+           font-size: 30px;
+           text-align: center;
+       }
+       .dt{
+          display: block;
+           margin:auto;
+           font-size: 18px;
+           text-align: center;
+       }
+       .last{
+           padding-bottom: 10px;
+           text-align: center;
+           display: block;
+           margin:auto;
+           margin-top: 10px;
+           font-size: 20px;
+       }
+       .extra{
+           display: block;
+           margin: auto;
+           height: 30px;
+           width: 50%;
+           text-align: center;
+
+       }
+
+       a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+a:link {
+  color: #265301;
+}
+
+a:visited {
+  color: #437A16;
+}
+
+a:focus {
+  border-bottom: 1px solid;
+  background: #BAE498;
+}
+
+a:hover {
+  border-bottom: 1px solid;     
+  background: #CDFEAA;
+}
+
+a:active {
+  background: #265301;
+  color: #CDFEAA;
+}
+       @media only screen and (max-width: 760px) {
+        .scnd{
+           width: 46%;
+           height: 100px;
+           border: 1px solid black;
+           margin: 2%;
+           text-align: center;
+       }
+              .res{
+           display: block;
+           margin:auto;
+           font-size: 28px;
+           text-align: center;
+       }
+        .form-control
+       {   
+           width: 55%;
+           margin: auto;
+       }
+       .dt{
+          display: block;
+           margin:auto;
+           font-size: 19px;
+           text-align: center;
+       }
+              .rs{
+           width: 55%;
+           height: 200px;
+           display: block;
+           margin:auto;
+           margin-top:30px;
+       }
+            .ch{
+           width: 100%;
+         margin-left: 0px;
+         margin-right: 70px;;
+          height: 55%;
+          margin-top: 30px;
+       }
+              .extra{
+           width: 90%;
+       }
+}
+
+
+   
+
+     
+    </style>
+    <div class="container">
+        <img src="/images/logo.png" alt="">
+        <h1 class="main">COVID-19 INDIA TRACKER</h1>
+        <h1 class="display-4 date">....</h1>
+        
+        <div class="row">
+             <div class="border-danger scnd" >CONFIRMED <br> <h4 class="data data1" id="count1" >...</h4></div>
+             <div class="border-primary scnd"  >ACTIVE <br> <h4 class="data data2" id="count2">....</h4></div>
+             <div class="border-success scnd"  >RECOVERED <br> <h4 class="data data3" id="count3">...</h4></div>
+             <div class="border-dark scnd"  >DECEASED <br> <h4 class="data data4" id="count4" >....</h4></div>            
+        </div>
+        <div class="extra text-danger" >
+            ....
+        </div>
+          <div class="ch">
+        <canvas id="myChart"  ></canvas>
+        <canvas id="myChart1" ></canvas> </div>     
+        <div class="state">
+        <label for="exampleFormControlSelect1">Select from States and Union Territories</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+            <option>All States</option>
+            <option>Andaman and Nicobar Islands</option>
+            <option>Andhra Pradesh</option>
+            <option>Arunachal Pradesh</option>
+            <option>Assam</option>
+            <option>Bihar</option>
+            <option>Chandigarh</option>
+            <option>Chhattisgarh</option>
+            <option>Dadra and Nagar Haveli</option>
+            <option>Daman and Diu</option>
+            <option>Delhi</option>
+            <option>Goa</option>
+            <option>Gujarat</option>
+            <option>Haryana</option>
+            <option>Himachal Pradesh</option>
+            <option>Jammu and Kashmir</option>    
+            <option>Jharkhand</option>
+            <option>Karnataka</option>
+            <option>Kerala</option>
+            <option>Ladakh</option>
+            <option>Lakshdweep</option>
+            <option>Madhya Pradesh</option>
+            <option>Maharashtra</option>
+            <option>Manipur</option>
+            <option>Meghalaya</option>
+            <option>Mizoram</option>      
+            <option>Nagaland</option>
+            <option>Odisha</option>
+            <option>Puducherry</option>
+            <option>Punjab</option>
+            <option>Rajasthan</option> 
+            <option>Sikkim</option>
+            <option>Tamil Nadu</option>
+            <option>Telangana</option>
+            <option>Tripura</option>
+            <option>Uttar Pradesh</option>   
+            <option>Uttarakhand</option>
+            <option>West Bengal</option>                                                                         
+          </select>
+        </div>
+        <div class="rs">
+           <span class="res"></span> 
+           <span class="dt"></span>
+
+        </div> 
+        <div>
+            <marquee  BGCOLOR=Green>Wash your hands frequently for 20+ seconds with soap and water. Routinely clean frequently touched spaces in your home</marquee>
+            <marquee  BGCOLOR=Green>Seek medical help if you’re suffering from a fever, cough or difficulty breathing</marquee>
+            <marquee  BGCOLOR=Green>Don’t go to crowded areas. Don’t be in close contact with others. Don’t touch your face.
+</marquee>
+    </div>
+    <div class="last">
+       <h1 class="display-4">Useful Links</h1>
+       <a href="https://www.mygov.in/covid-19/?cbps=1">COVID-19| MyGov.in</a><br>
+       <a href="https://www.mohfw.gov.in/">Ministry of Health and Family Welfare,Govt of India</a><br>
+       <a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf">Helpline Numbers(by State)</a><br>
+       <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">WHO-Covid-19 Home Page</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="/js/cv19.js"></script>
+</body>
+</html>

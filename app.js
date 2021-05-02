@@ -12,25 +12,38 @@ app.use(express.static(publicDirPath));
  app.get("",(req,res)=>{
    res.render("index");
 })
-
+app.get("/statsgraphs",(req,res)=>{
+  res.render("statsgraphs");
+})
+app.get("/statewise",(req,res)=>{
+  res.render("statewise");
+})
+app.get("/help",(req,res)=>{
+  res.render("help");
+})
+app.get("/p",(req,res)=>{
+  res.render("nav");
+})
 app.get("/stats",(req,res)=>{
-       statistics.stats((data1,data2,data3,data4,data5,data6)=>{
+       statistics.stats((data1)=>{
+        //  console.log(data7)
              res.send(
                {
-               total:{
-               confirmed:data1,
-               deceased:data2,
-               recovered:data3,
-               active:data4, 
-              },
-              date_by_date: data6,
-              statewise: data5
+              date_by_date: data1,
              })
 
        })
 
        
 
+})
+app.get("/state_tests_data",(req,res)=>{
+  statistics.stats2((data1)=>{
+    res.send(
+      {
+        state_tests_data:data1
+      })
+  })
 })
 app.listen(port,()=>{
     console.log("Starting the server on port " + port +"...");
