@@ -246,7 +246,7 @@ border-bottom: 1px solid rgb(151, 156, 165);
         width: 80%;
     }
 .stats_block{
-    font-size: 23px;
+    font-size: 20px;
 }
 }
 @media(max-width:350px)
@@ -273,4 +273,5 @@ line-height: 35px;
         width: 100%;
         height: 330px;
     }
+
 }
