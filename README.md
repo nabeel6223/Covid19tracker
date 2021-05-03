@@ -13,4 +13,4 @@ These are the APIs which I have generated-
 http://covid19-nabeel6223.herokuapp.com/stats
 http://covid19-nabeel6223.herokuapp.com/state_tests_data
 
-![homepage](https://imgur.com/IlEMKM9)
+![homepage](https://imgur.com/IlEMKM9.png)
