@@ -238,7 +238,7 @@ const statistics2=(callback)=>{
            recovered:(response.body[state_Code[i].code].total.recovered).toString(),
            active:(active).toString(),
            total_samples_tested:(response.body[state_Code[i].code].total.tested).toString(),
-           total_vaccines_administered:(response.body[state_Code[i].code].total.vaccinated).toString(),  
+           total_vaccines_administered:(response.body[state_Code[i].code].total.vaccinated1 + response.body[state_Code[i].code].total.vaccinated2).toString(),  
            last_updated:(response.body[state_Code[i].code].meta.last_updated).toString()         
          }
        )
