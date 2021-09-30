@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cutive&family=Abril+Fatface&family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/nav.css" type="text/css">
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <title>Covid 19 Tracker| Homepage</title>
+    <link rel="icon" href="/images/logo.png" type="image/x-icon">
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  
+  {{!-- <script src="https://code.highcharts.com/highcharts.src.js"></script> --}}
+
+  
+<div id="head-placeholder">
+
+</div>
+    <div class="updated bg-dark text-center text-white p-2">
+<i class="fas fa-wrench"></i> <span class="date">Updated till 22 April 2021</span> 
+    </div>
+    <div class="container">
+    <div class="stats">
+        <div class="stats_block  text-center">
+              Confirmed <br> 
+             <span id="count1">321333124</span> 
+        </div>
+                <div class="stats_block text-center">
+              Active <br> 
+<span id="count2">321333124</span> 
+        </div>
+                <div class="stats_block text-center">
+              Recovered<br> 
+<span id="count3">321333124</span> 
+        </div>
+                <div class="stats_block text-center">
+              Deceased <br> 
+<span id="count4">321333124</span> 
+        </div>
+    </div>
+        <div class="updated vaccines text-center bg-primary text-white p-2">
+<i class="fas fa-syringe"></i> <span id="count5" > 32131232</span>  vaccine doses administered
+    </div>
+        <div class="updated confirmed_increased bg-danger text-center text-white  p-2">
+<i class="fas fa-head-side-mask"></i>   <span id="count6" > 32131232</span> cases reported yesterday
+    </div>
+        <div class="updated recovered_increased bg-success text-center text-white  p-2">
+<i class="fas fa-first-aid"></i> <span id="count7" > 32131232</span> people recovered yesterday
+    </div>
+            <div class="updated deaths_increases bg-secondary text-center text-white  p-2">
+<i class="fas fa-heartbeat"></i>  <span id="count8" > 32131232</span> deaths reported yesterday
+    </div>
+              {{!-- <div class="ch">
+        <canvas id="myChart"  ></canvas>
+        <canvas id="myChart1" ></canvas> </div>   
+    </div> --}}
+
+        
+
+
+                <div class="state">
+        <label for="exampleFormControlSelect1">Select from States and Union Territories</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+            <option>All States</option>
+            <option>Andaman and Nicobar Islands</option>
+            <option>Andhra Pradesh</option>
+            <option>Arunachal Pradesh</option>
+            <option>Assam</option>
+            <option>Bihar</option>
+            <option>Chandigarh</option>
+            <option>Chhattisgarh</option>
+            <option>Dadra and Nagar Haveli and Daman and Diu</option>
+            <option>Delhi</option>
+            <option>Goa</option>
+            <option>Gujarat</option>
+            <option>Haryana</option>
+            <option>Himachal Pradesh</option>
+            <option>Jammu and Kashmir</option>    
+            <option>Jharkhand</option>
+            <option>Karnataka</option>
+            <option>Kerala</option>
+            <option>Ladakh</option>
+            <option>Lakshadweep</option>
+            <option>Madhya Pradesh</option>
+            <option>Maharashtra</option>
+            <option>Manipur</option>
+            <option>Meghalaya</option>
+            <option>Mizoram</option>      
+            <option>Nagaland</option>
+            <option>Odisha</option>
+            <option>Puducherry</option>
+            <option>Punjab</option>
+            <option>Rajasthan</option> 
+            <option>Sikkim</option>
+            <option>Tamil Nadu</option>
+            <option>Telangana</option>
+            <option>Tripura</option>
+            <option>Uttar Pradesh</option>   
+            <option>Uttarakhand</option>
+            <option>West Bengal</option>                                                                         
+          </select>
+        </div>
+        <div class="rs">
+           <div class="res"></div> 
+           <div class="dt"></div>
+
+        </div>
+        <script>
+$(function(){
+  $("#head-placeholder").load("p");
+});
+
+
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="/js/cv19.js"></script>
+    <script src="/js/nav.js"></script>
+</body>
+</html>
