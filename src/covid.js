@@ -1,16 +1,7 @@
 const req= require("request");
 const fs= require("fs");
-// const url="https://data.covid19india.org/v4/min/timeseries.min.json";
-// const url1="https://api.covid19india.org/v4/data.json"
-fsdfsfsdfsd
-fsdfsfsdfsdsdf
-sdf
-sdf
-sdf
-sd
-f
-sf
-
+const url="https://data.covid19india.org/v4/min/timeseries.min.json";
+const url1="https://api.covid19india.org/v4/data.json"
 const state_Code=[
   {
     code:"TT",
